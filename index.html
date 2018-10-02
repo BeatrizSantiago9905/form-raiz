@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="BeatrizSantiago">
+
+    <title>Form Raiz</title>
+
+</head>
+<body>
+
+    <form>
+
+        <div><img src="" alt=""></div>
+        <div><h1>Cadastre-se</h1></div>
+
+        <label for="">Nome Completo <span>*</span></label>
+        <input type="text" name="nomecompleto" id="nomecompleto" maxlength="250" placeholder="Digite seu nome aqui" >
+
+        <label for="">CPF <span>*</span></label>
+        <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="000.000.000-00">
+
+        <label for="">Data de Nascimento <span>*</span></label>
+        <input type="date" name="datanascimento" id="datanascimento">
+
+        <label for="">Telefone <span>*</span></label>
+        <input type="text" name="telefone" id="telefone" maxlength="15" placeholder="(00) 00000-0000">
+
+        <label for="">Sexo <span>*</span></label>
+        <input type="radio" name="masc" id="masc" value="sexo"> Masculino
+        <input type="radio" name="fem" id="fem" value="sexo"> Femenino
+
+        <label for="">Endereço <span>*</span></label>
+        <input type="text" name="endereco" id="endereco">
+
+        <label for="">CEP <span>*</span></label>
+        <input type="text" name="cep" id="cep">
+        
+        <label for="">Logradouro <span>*</span></label>
+        <select name="logradouro" id="logradouro"> 
+            <option value="">Selecione</option>
+            <option value="casa">Casa</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="apartamento">Outro</option>
+        </select>
+
+        <label for="">E-mail <span>*</span></label>
+        <input type="text" name="email" id="email" maxlength="120" placeholder="ex: usuario@email.com" >
+
+        <label for="">Senha <span>*</span> <h5>(até 10 caracteres)</h5></label>
+        <input type="password" name="senha" id="senha">
+
+        <label for="">Confirmar Senha <span>*</span></label>
+        <input type="password" name="comfirmarsenha" id="confirmarsenha">
+
+        <label for="">Foto do Perfil <span>*</span></label>
+        <input type="file" name="fotoperfil" id="fotoperfil">
+
+        <button id="cadastrar" type="submit">Cadastrar</button>
+
+    </form>
+    
+</body>
+</html>
