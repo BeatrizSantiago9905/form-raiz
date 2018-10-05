@@ -1,0 +1,61 @@
+body {
+    margin: 0px;
+}
+
+.div-form {
+    position: relative;
+    width: 600px;
+    padding: 15px;
+    border: solid #e8e8e8 2px;
+    border-radius: 7px;
+}
+
+span {
+    color: red;
+}
+
+label {
+    font-size: 16px;
+    color: #696969;
+}
+
+input {
+    position: relative;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px #a1a1a1;
+    font-size: 15px;
+    color: #696969;
+}
+
+select {
+    position: relative;
+    display: inline-block;
+    width: 295px;
+    height: 32px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px #a1a1a1;
+    font-size: 15px;
+    color: #696969;
+}
+
+.input-grande {
+    width: 584px;  
+}
+
+.input-medio {
+    width: 96%;
+}
+
+.label-medio {
+    position: relative;
+    display: inline-block;
+    width: 295px;
+    color: #696969;
+}
