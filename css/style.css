@@ -19,7 +19,21 @@ label {
     color: #696969;
 }
 
-input {
+select {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 32px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px #a1a1a1;
+    font-size: 15px;
+    color: #696969;
+}
+
+.input-medio, .input-grande, .input-pequeno {
     position: relative;
     height: 20px;
     margin-top: 5px;
@@ -31,31 +45,50 @@ input {
     color: #696969;
 }
 
-select {
-    position: relative;
-    display: inline-block;
-    width: 295px;
-    height: 32px;
-    margin-top: 5px;
-    margin-bottom: 8px;
-    padding: 5px;
-    border-radius: 5px;
-    border: solid 1px #a1a1a1;
-    font-size: 15px;
-    color: #696969;
-}
-
 .input-grande {
-    width: 584px;  
+    width: 585px;
 }
 
 .input-medio {
-    width: 96%;
+    width: 284px;
+}
+
+.input-pequeno {
+    width: 149px;
 }
 
 .label-medio {
     position: relative;
     display: inline-block;
-    width: 295px;
+    width: 296px;
     color: #696969;
+}
+
+.label-pequeno {
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    color: #696969;
+}
+
+.input-fotoperfil {
+    position: relative;
+    margin: 15px 0px 25px 0px;
+    color: #696969;
+    font-size: 13px;
+}
+
+.btn-cadastrar {
+    position: relative;
+    background-color: #fff;
+    color: #00b84c;
+    font-size: 16px;
+    border: solid 1px #00b84c;
+    border-radius: 4px;
+    padding: 6px 28px;
+}
+
+.btn-cadastrar:hover {
+    background-color: #00b84c;
+    color: #fff;
 }

@@ -24,43 +24,43 @@
 
             <div class="label-grande">
                 <label>Nome Completo <span>*</span></label>
-                <input type="text" class="input-grande" name="nomecompleto" id="nomecompleto" maxlength="250" placeholder="Digite seu nome aqui" >
+                <input type="text" class="input-grande" maxlength="250" placeholder="Digite seu nome aqui" >
             </div>
 
             <div class="label-medio">
                 <label>CPF <span>*</span></label>
-                <input type="text" class="input-medio" name="cpf" id="cpf" maxlength="11" placeholder="000.000.000-00">
+                <input type="text" class="input-medio" maxlength="11" placeholder="000.000.000-00">
             </div>
 
             <div class="label-medio">
                 <label>Data de Nascimento <span>*</span></label>
-                <input type="date" class="input-medio" name="datanascimento" id="datanascimento">
+                <input type="date" class="input-medio">
             </div>
 
             <div class="label-medio">
                 <label for="">Telefone <span>*</span></label>
-                <input type="text" class="input-medio" name="telefone" id="telefone" maxlength="15" placeholder="(00) 00000-0000">
+                <input type="text" class="input-medio" maxlength="15" placeholder="(00) 00000-0000">
             </div>
 
             <div class="label-medio">
                 <label>Sexo <span>*</span></label><br>
-                <input type="radio" name="masc" id="masc" value="masc"> Masculino
-                <input type="radio" name="fem" id="fem" value="fem"> Femenino
+                <input type="radio" value="masc"> Masculino
+                <input type="radio" value="fem"> Femenino
             </div>
 
             <div class="label-grande">
                 <label>Endereço <span>*</span></label>
-                <input type="text" class="input-grande" name="endereco" id="endereco" maxlength="150" placeholder="Ex: Rua Cajazeiras, 400">
+                <input type="text" class="input-grande" maxlength="150" placeholder="Ex: Rua Cajazeiras, 400">
             </div>
 
             <div class="label-medio">
                 <label>CEP <span>*</span></label>
-                <input type="text" class="input-medio" name="cep" id="cep" maxlength="9" placeholder="00000-000">
+                <input type="text" class="input-medio" maxlength="9" placeholder="00000-000">
             </div>
             
-            <div class="label-medio">
-                <label>Logradouro <span>*</span></label>
-                <select name="logradouro" id="logradouro"> 
+            <div class="label-pequeno">
+                <label>Logradouro <span>*</span></label><br>
+                <select> 
                     <option value="">Selecione</option>
                     <option value="casa">Casa</option>
                     <option value="apartamento">Apartamento</option>
@@ -68,28 +68,33 @@
                 </select>
             </div>
 
+            <div class="label-pequeno">
+                <label>Qual? <span>*</span></label><br>
+                <input type="text" class="input-pequeno" disabled>
+            </div>
+
             <div class="label-grande">
                 <label>E-mail <span>*</span></label>
-                <input type="text" class="input-grande" name="email" id="email" maxlength="120" placeholder="ex: usuario@email.com" >
+                <input type="text" class="input-grande" maxlength="120" placeholder="ex: usuario@email.com" >
             </div>
 
             <div class="label-medio">
                 <label>Senha (até 10 caracteres) <span>*</span></label>
-                <input type="password" class="input-medio" name="senha" id="senha">
+                <input type="password" pattern="[0-9a-fA-F]{4,10}" maxlength="10" class="input-medio">
             </div>
 
             <div class="label-medio">
                 <label>Confirmar Senha <span>*</span></label>
-                <input type="password" class="input-medio" name="comfirmarsenha" id="confirmarsenha">
+                <input type="password" pattern="[0-9a-fA-F]{4,10}" maxlength="10" class="input-medio" >
             </div>
 
             <div class="label-grande">
-                <label>Foto do Perfil <span>*</span></label>
-                <input type="file"name="fotoperfil" id="fotoperfil">
+                <label>Foto do Perfil <span>*</span></label><br>
+                <input type="file" class="input-fotoperfil">
             </div>
 
             <div class="label-grande">
-                <button id="cadastrar" type="submit">Cadastrar</button>
+                <button class="btn-cadastrar" type="submit">Cadastrar</button>
             </div>
 
         </form>
