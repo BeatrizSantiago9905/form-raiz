@@ -8,7 +8,27 @@ body {
     padding: 15px;
     border: solid #e8e8e8 2px;
     border-radius: 7px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+.img-user {
+    position: relative;
+    width: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.titulo {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 
 span {
     color: red;
@@ -71,13 +91,6 @@ select {
     color: #696969;
 }
 
-.input-fotoperfil {
-    position: relative;
-    margin: 15px 0px 25px 0px;
-    color: #696969;
-    font-size: 13px;
-}
-
 .btn-cadastrar {
     position: relative;
     background-color: #fff;
@@ -86,9 +99,4 @@ select {
     border: solid 1px #00b84c;
     border-radius: 4px;
     padding: 6px 28px;
-}
-
-.btn-cadastrar:hover {
-    background-color: #00b84c;
-    color: #fff;
 }
