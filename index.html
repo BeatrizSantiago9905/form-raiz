@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,7 @@
     <title>Form Raiz</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-validation.css">
 
 </head>
 <body>
@@ -20,42 +21,50 @@
 
         <div><h1 class="titulo">Cadastre-se</h1></div>
 
-        <form class="form-cadastro">
+        <form class="form-cadastro" method="post">
 
             <div class="label-grande">
                 <label>Nome Completo <span>*</span></label>
-                <input type="text" class="input-grande" maxlength="250" placeholder="Digite seu nome aqui" >
+                <input type="text" class="input-grande" id="nome" maxlength="250" placeholder="Digite seu nome aqui" >
+                <span class="mensagem-erro erro-direita erro-nome"></span>
             </div>
+
 
             <div class="label-medio">
                 <label>CPF <span>*</span></label>
-                <input type="text" class="input-medio" maxlength="11" placeholder="000.000.000-00">
+                <input type="text" class="input-medio" id="cpf" maxlength="11" placeholder="000.000.000-00">
+                <span class="mensagem-erro erro-esquerda erro-cpf"></span>
             </div>
 
             <div class="label-medio">
                 <label>Data de Nascimento <span>*</span></label>
                 <input type="date" class="input-medio">
+                <span class="mensagem-erro erro-direita erro-data"></span>
             </div>
 
             <div class="label-medio">
                 <label for="">Telefone <span>*</span></label>
                 <input type="text" class="input-medio" maxlength="15" placeholder="(00) 00000-0000">
+                <span class="mensagem-erro erro-esquerda erro-telefone"></span>
             </div>
 
             <div class="label-medio">
                 <label>Sexo <span>*</span></label><br>
-                <input type="radio" value="masc"> Masculino
-                <input type="radio" value="fem"> Femenino
+                <input type="radio" name="sexo" value="masc"> Masculino
+                <input type="radio" name="sexo" value="fem"> Femenino
+                <span class="mensagem-erro erro-direita erro-sexo"></span>
             </div>
 
             <div class="label-grande">
                 <label>Endereço <span>*</span></label>
                 <input type="text" class="input-grande" maxlength="150" placeholder="Ex: Rua Cajazeiras, 400">
+                <span class="mensagem-erro erro-direita erro-endereco"></span>
             </div>
 
             <div class="label-medio">
                 <label>CEP <span>*</span></label>
                 <input type="text" class="input-medio" maxlength="9" placeholder="00000-000">
+                <span class="mensagem-erro erro-esquerda erro-cep"></span>
             </div>
             
             <div class="label-pequeno">
@@ -66,6 +75,7 @@
                     <option value="apartamento">Apartamento</option>
                     <option value="outro">Outro</option>
                 </select>
+                <span class="mensagem-erro erro-direita erro-logradouro"></span>
             </div>
 
             <div class="label-pequeno">
@@ -76,25 +86,30 @@
             <div class="label-grande">
                 <label>E-mail <span>*</span></label>
                 <input type="text" class="input-grande" maxlength="120" placeholder="ex: usuario@email.com" >
+                <span class="mensagem-erro erro-direita erro-email"></span>
             </div>
 
             <div class="label-medio">
                 <label>Senha (até 10 caracteres) <span>*</span></label>
                 <input type="password" maxlength="10" class="input-medio">
+                <span class="mensagem-erro erro-esquerda erro-senha"></span>
             </div>
 
             <div class="label-medio">
                 <label>Confirmar Senha <span>*</span></label>
                 <input type="password" maxlength="10" class="input-medio" >
+                <span class="mensagem-erro erro-direita erro-confirma-senha"></span>
             </div>
 
             <div>
-                <button class="btn-cadastrar" type="submit">Cadastrar</button>
+                <input type="button" class="btn-cadastrar" value="Cadastrar" onclick="validarCadastro()">
             </div>
 
         </form>
 
     </div>
-    
+
+    <script src="js/validation.js"></script>
+
 </body>
 </html>

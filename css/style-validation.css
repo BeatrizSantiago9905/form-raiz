@@ -1,0 +1,78 @@
+.mensagem-erro {
+    position: absolute;
+    width: 300px;
+    height: 25px;
+    padding-top: 5px;
+    background-color: #ff2d2dd0;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    opacity: 0;
+    z-index: 100;
+}
+
+.erro-direita {    
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+    -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%, 0% 50%);
+}
+
+.erro-esquerda {
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+}
+
+.erro-nome {
+    top: 292px;
+    right: -310px;
+}
+
+.erro-cpf {
+    top: 29px;
+    left: -325px;
+}
+
+.erro-data {
+    top: 29px;
+    right: -328px;
+}
+
+.erro-telefone {
+    top: 29px;
+    left: -325px;
+}
+
+.erro-sexo {
+    top: 22px;
+    right: -328px;
+}
+
+.erro-endereco {
+    top: 495px;
+    right: -310px;
+}
+
+.erro-cep {
+    top: 29px;
+    left: -325px;
+}
+
+.erro-logradouro {
+    top: 29px;
+    right: -494px;
+}
+
+.erro-email {
+    top: 632px;
+    right: -310px;
+}
+
+.erro-senha {
+    top: 29px;
+    left: -325px;   
+}
+
+.erro-confirma-senha {
+    top: 29px;
+    right: -328px;
+}
