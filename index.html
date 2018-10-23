@@ -44,7 +44,7 @@
 
             <div class="label-medio">
                 <label for="">Telefone <span>*</span></label>
-                <input type="text" class="input-medio" maxlength="15" placeholder="(00) 00000-0000">
+                <input type="text" id="telefone" class="input-medio" maxlength="15" placeholder="(00) 00000-0000">
                 <span class="mensagem-erro erro-esquerda erro-telefone"></span>
             </div>
 
@@ -57,19 +57,19 @@
 
             <div class="label-grande">
                 <label>Endereço <span>*</span></label>
-                <input type="text" class="input-grande" maxlength="150" placeholder="Ex: Rua Cajazeiras, 400">
+                <input type="text" id="endereco" class="input-grande" maxlength="150" placeholder="Ex: Rua Cajazeiras, 400">
                 <span class="mensagem-erro erro-direita erro-endereco"></span>
             </div>
 
             <div class="label-medio">
                 <label>CEP <span>*</span></label>
-                <input type="text" class="input-medio" maxlength="9" placeholder="00000-000">
+                <input type="text" id="cep" class="input-medio" maxlength="9" placeholder="00000-000">
                 <span class="mensagem-erro erro-esquerda erro-cep"></span>
             </div>
             
             <div class="label-pequeno">
                 <label>Logradouro <span>*</span></label><br>
-                <select> 
+                <select id="logradouro"> 
                     <option value="">Selecione</option>
                     <option value="casa">Casa</option>
                     <option value="apartamento">Apartamento</option>
@@ -85,19 +85,19 @@
 
             <div class="label-grande">
                 <label>E-mail <span>*</span></label>
-                <input type="text" class="input-grande" maxlength="120" placeholder="ex: usuario@email.com" >
+                <input type="text" id="email" class="input-grande" maxlength="120" placeholder="ex: usuario@email.com" >
                 <span class="mensagem-erro erro-direita erro-email"></span>
             </div>
 
             <div class="label-medio">
-                <label>Senha (até 10 caracteres) <span>*</span></label>
-                <input type="password" maxlength="10" class="input-medio">
+                <label>Senha (entre 5 e 10 caracteres) <span>*</span></label>
+                <input type="password" id="senha" maxlength="10" class="input-medio">
                 <span class="mensagem-erro erro-esquerda erro-senha"></span>
             </div>
 
             <div class="label-medio">
                 <label>Confirmar Senha <span>*</span></label>
-                <input type="password" maxlength="10" class="input-medio" >
+                <input type="password" id="confirmasenha" maxlength="10" class="input-medio" >
                 <span class="mensagem-erro erro-direita erro-confirma-senha"></span>
             </div>
 
