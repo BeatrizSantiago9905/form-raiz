@@ -23,56 +23,56 @@
 }
 
 .erro-nome {
-    top: 292px;
+    top: 285px;
     right: -310px;
 }
 
 .erro-cpf {
-    top: 29px;
+    top: 25px;
     left: -325px;
 }
 
 .erro-data {
-    top: 29px;
+    top: 25px;
     right: -328px;
 }
 
 .erro-telefone {
-    top: 29px;
+    top: 26px;
     left: -325px;
 }
 
 .erro-sexo {
-    top: 22px;
+    top: 18px;
     right: -328px;
 }
 
 .erro-endereco {
-    top: 495px;
+    top: 475px;
     right: -310px;
 }
 
 .erro-cep {
-    top: 29px;
+    top: 25px;
     left: -325px;
 }
 
 .erro-logradouro {
-    top: 29px;
+    top: 25px;
     right: -494px;
 }
 
 .erro-email {
-    top: 632px;
+    top: 600px;
     right: -310px;
 }
 
 .erro-senha {
-    top: 29px;
+    top: 25px;
     left: -325px;   
 }
 
 .erro-confirma-senha {
-    top: 29px;
+    top: 25px;
     right: -328px;
 }

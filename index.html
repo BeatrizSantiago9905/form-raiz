@@ -17,7 +17,7 @@
 
     <div class="div-form">
 
-        <div><img src="img/man.png" alt="user" class="img-user"></div>
+        <div class="item-align"><img src="img/man.png" alt="user" class="img-user"></div>
 
         <div><h1 class="titulo">Cadastre-se</h1></div>
 
@@ -32,7 +32,7 @@
 
             <div class="label-medio">
                 <label>CPF <span>*</span></label>
-                <input type="text" class="input-medio" id="cpf" maxlength="11" placeholder="000.000.000-00">
+                <input type="text" class="input-medio" id="cpf" maxlength="14" placeholder="000.000.000-00">
                 <span class="mensagem-erro erro-esquerda erro-cpf"></span>
             </div>
 
@@ -44,7 +44,7 @@
 
             <div class="label-medio">
                 <label for="">Telefone <span>*</span></label>
-                <input type="text" id="telefone" class="input-medio" maxlength="15" placeholder="(00) 00000-0000">
+                <input type="text" id="telefone" class="input-medio" maxlength="14" placeholder="(00)00000-0000">
                 <span class="mensagem-erro erro-esquerda erro-telefone"></span>
             </div>
 
@@ -80,7 +80,7 @@
 
             <div class="label-pequeno">
                 <label>Qual? <span>*</span></label><br>
-                <input type="text" class="input-pequeno" disabled>
+                <input type="text" class="input-pequeno" id="qual" disabled>
             </div>
 
             <div class="label-grande">
@@ -101,7 +101,7 @@
                 <span class="mensagem-erro erro-direita erro-confirma-senha"></span>
             </div>
 
-            <div>
+            <div class="item-align">
                 <input type="button" class="btn-cadastrar" value="Cadastrar" onclick="validarCadastro()">
             </div>
 

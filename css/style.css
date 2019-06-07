@@ -1,5 +1,7 @@
 body {
     margin: 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .div-form {
@@ -8,16 +10,18 @@ body {
     padding: 15px;
     border: solid #e8e8e8 2px;
     border-radius: 7px;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 30px;
+}
+
+.item-align {
+    display: flex;
+    justify-content: center;
 }
 
 .img-user {
     position: relative;
     width: 180px;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 180px;
 }
 
 .titulo {
@@ -91,6 +95,11 @@ select {
     color: #696969;
 }
 
+.btn-align {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .btn-cadastrar {
     position: relative;
     background-color: #fff;
@@ -99,4 +108,5 @@ select {
     border: solid 1px #00b84c;
     border-radius: 4px;
     padding: 6px 28px;
+    margin-right: 1%;
 }
